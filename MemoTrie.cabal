@@ -12,7 +12,7 @@ Description:
   .
   &#169; 2008-2019 by Conal Elliott; BSD3 license.
 Homepage:            https://github.com/conal/MemoTrie
-Author:              Conal Elliott 
+Author:              Conal Elliott
 Maintainer:          conal@conal.net
 Copyright:           (c) 2008-2019 by Conal Elliott
 License:             BSD3
@@ -37,18 +37,15 @@ Library
   else
      Build-Depends: base <4.8.0.0, void, newtype-generics >= 0.5.3
 
-  Exposed-Modules:     
+  Exposed-Modules:
                      Data.MemoTrie
-  Other-Modules:     
+  default-language: GHC2024
 
-  default-language: Haskell2010
-
-executable generic 
+executable generic
   if !flag(examples)
     buildable:         False
   main-is:             Generic.hs
   ghc-options:         -Wall
   hs-source-dirs:      examples
-  default-language:    Haskell2010
+  default-language:    GHC2024
   build-depends:       base, MemoTrie
-
